@@ -141,36 +141,3 @@ window.addEventListener('scroll', scrolllHeader)
     if(this.scrollY >= 500) scrollUp.classList.add('show_scroll'); else scrollUp.classList.remove('show_scroll')
   }
   window.addEventListener('scroll', scrollUp)
-
-
-const itemOne = document.getElementById('one')
-const itemTwo = document.getElementById('two')
-const itemThree = document.getElementById('three')
-const itemFour = document.getElementById('four')
-
-
-const mobile = document.getElementById('mobile')
-const web = document.getElementById('web')
-const online = document.getElementById('online')
-const ngo = document.getElementById('ngo')
-
-
-mobile.addEventListener('mouseenter', () => {
-   itemTwo.document.add('.hide')
-    console.log('I am the mobile')
-});
-web.addEventListener('mouseenter', () => {
-   
-    console.log('I am the web')
-});
-online.addEventListener('mouseenter', () => {
-   
-    console.log('I am online')
-});
-ngo.addEventListener('mouseenter', () => {
-   
-    console.log('I am ngp')
-});
-mobile();
-
-console.log(mobile)
