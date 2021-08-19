@@ -867,8 +867,7 @@ color: var(--text-color-light)
     width: 200px;
     justify-self: center;
     border-radius: 55% 30% 70% 90%;
-    background-color:rgb(36, 34, 34);
-    box-shadow: 4px 10px 9px 2px rgb(36, 34, 34);
+    background-color: white;
 }
 
 .project_container{
