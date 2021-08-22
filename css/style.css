@@ -1294,3 +1294,14 @@ color: var(--text-color-light)
 .hide{
     opacity: 0;
 }
+
+button{
+    outline-width: none;
+    border: none;
+    transition: 2s eas-in;
+}
+
+button:hover{
+    color: white;
+    background: var(--header-background);
+}
