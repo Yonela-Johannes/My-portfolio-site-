@@ -356,6 +356,7 @@ img{
     margin-right: .25rem;
 }
 
+
 /* PROFILE */
 .profile-content{
     width: 100%;
@@ -476,7 +477,7 @@ img{
 
 /* classes modified for large screen size */
 
-@media screen and (min-width: 968px){
+/* @media screen and (min-width: 968px){
     body{
         margin: 3rem 0
     }
@@ -503,7 +504,7 @@ img{
     }
 
 
-}
+} */
 
 .scroll_header{
     box-shadow: 0 -1px 4px rgba(0,0,0,.15);
@@ -760,3 +761,6 @@ body.dark-theme{
     width: 60%;
     padding: 1rem;
 }
+
+
+
