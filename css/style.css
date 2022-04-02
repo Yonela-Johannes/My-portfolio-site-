@@ -414,7 +414,7 @@ img{
 .button--flex{
     display: inline-block;
     color: var(--main-main-color);
-    background-color: var(--main-hover);
+    background-color: var(--main-hover); 
     padding: .2rem;
     border: .2px solid var(--header-background);
     border-radius: .2rem;
