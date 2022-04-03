@@ -108,7 +108,6 @@ section {
 .section_subtitle{
     display: block;
     font-size: var(--small-font-size);
-    /* margin-bottom: var(--mb-3); */
 }
 
 .section_title,
@@ -120,11 +119,9 @@ section {
 .main-container {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    min-height: 100vh;
 }
 .main {
-    flex-grow: 1;
+    flex: 1;
 }
 .container{
     max-width: 768px;
@@ -287,39 +284,6 @@ section {
    margin-bottom: var(--mb-2);
 }
 
-
-/* HOME BUTTONS SECTION */
-
-.home_buttons_content {
-    display: flex;
-    background-color: #686363;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin-top: 10px;
-}
-.button-float{
-    border-bottom: .2px solid rgb(176, 176, 176);
-    cursor: pointer;
-}
-
-.home_buttons_data{
-    padding: 20px;
-}
-.home_buttons_data:hover{
-    background-color: gray;
-}
-
-.details_button p{
-    color: white;
-    padding: 5px 15px; 
-}
-.button_active {
-    border-right: .2px solid rgb(88, 88, 88);
-    border-left: .2px solid rgb(95, 95, 95);
-    background-color: rgb(63, 62, 62);
-}
-
 /* BUTTONS */
 .button{
     display: inline-block;
@@ -347,8 +311,8 @@ section {
 
 /* DETAILS */
 
-.content-container{
-    /* display: flex; */
+.details_container{
+    display: flex;
     width: 100%;
 }
 
@@ -363,10 +327,48 @@ section {
     background-color: rgb(235, 197, 197);
     padding: 0 20px;
 }
+.details_data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.details_info p {
+    max-width: 290px;
+}
+/* NEXT BUTTON */
+.next {
+    color: rgb(77, 77, 77);
+    top: 10;
+    bottom: 50px;
+    right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+.next:hover{
+    color: #686363;
+    background-color: rgb(255, 255, 255);
+}
 
+/* Projects button */
+
+.projects {
+    max-width: 150px;
+    margin: 10px auto;
+    border: .2px solid gray;
+}
+.home_buttons {
+    display: none;
+}
+.site-image {
+    width: 300px;
+    height: 120px;
+}
 .hide {
     display: none;
 }
+
 .footer{
 
 }
@@ -385,6 +387,17 @@ section {
 /* FOR MEDIUM DEVICES */
 
 @media screen and (min-width: 768px){
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 100vh;
+    }
+    .main {
+        flex-grow: 1;
+    }
+
     .container{
         margin-left: auto;
         margin-right: auto;
@@ -423,4 +436,84 @@ section {
         background-color: var(--main-hover);
         border-radius: 50% 40% 50% 60%;
     }
+
+    /* Details */
+    .details {
+        position: relative;
+        background-color: #686363;
+        padding: 5px 0;
+    }
+    .details_data {
+        flex-direction: row;
+        text-align: center;
+        align-items: flex-start;
+        justify-content: center;
+        padding-bottom: 15px;
+    }
+    .details_info{
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 10px;
+    }
+/* HOME BUTTONS SECTION */
+    .home_buttons{
+        display: contents;
+    }
+    .home_buttons_content {
+        display: flex;
+        background-color: #686363;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .button-float{
+        border-bottom: .2px solid rgb(176, 176, 176);
+        cursor: pointer;
+    }
+
+    .home_buttons_data{
+        padding: 20px;
+    }
+    .home_buttons_data:hover{
+        background-color: gray;
+    }
+
+    .details_button p{
+        color: white;
+        padding: 5px 15px; 
+    }
+    .button_active {
+        border-right: .2px solid rgb(88, 88, 88);
+        border-left: .2px solid rgb(95, 95, 95);
+        background-color: rgb(63, 62, 62);
+    }
+        /* NEXT BUTTON */
+    .next {
+        color: white;
+        border-radius: 2px;
+        top: 10;
+        bottom: 50px;
+        right: 10px;
+        position: absolute;
+        background-color: #686363;
+        padding: 5px 10px;
+        border: .2px solid white; 
+        cursor: pointer;
+        transition: .2s ease-in;
+        outline: .3px solid pink;
+        box-shadow: 1px 3px 6px rgb(255, 255, 255);
+    }
+    .next:hover{
+        color: #686363;
+        background-color: rgb(255, 255, 255);
+        outline: .3px solid pink;
+        border-color: gray;
+    }
+    .projects{
+        display: none;
+    }
+    /*  */
 }
