@@ -13,7 +13,7 @@ const frontEndDetails = document.querySelector('.frontend-details')
 const backEndDetails = document.querySelector('.backend-details')
 // image slide 
 const imageSlider = document.querySelector('.image-slider')
-const sliderImage = document.querySelector('.image-slider img')
+const sliderContent = document.querySelectorAll('.image-slider-content')
 
 
 about.addEventListener('click', () => {
@@ -70,11 +70,12 @@ hideProjects.addEventListener('click', () => {
 });
 
 // init count
-let counter = 0;
+let counter = 1;
 
 // init width
-const size = sliderImage[0].clientWidth;
+const size = sliderContent[2].clientWidth;
 
+console.log(size)
 
 imageSlider.style.transform = 'translateX(' + (-size * counter) + 'px)'
 
