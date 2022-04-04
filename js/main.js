@@ -1,4 +1,6 @@
 // buttons init
+const prevBtn = document.querySelector('#prev-button')
+const nextBtn = document.querySelector('#next-button')
 const about = document.querySelector('.about')
 const frontEnd = document.querySelector('.front-end')
 const backEnd = document.querySelector('.back-end')
@@ -9,6 +11,9 @@ const hideProjects = document.querySelector('.hide-projects')
 const aboutDetails = document.querySelector('.about-details')
 const frontEndDetails = document.querySelector('.frontend-details')
 const backEndDetails = document.querySelector('.backend-details')
+// image slide 
+const imageSlider = document.querySelector('.image-slider')
+const sliderImage = document.querySelector('.image-slider img')
 
 
 about.addEventListener('click', () => {
@@ -63,3 +68,22 @@ hideProjects.addEventListener('click', () => {
     showProjects.classList.remove('hide')
     hideProjects.classList.add('hide')
 });
+
+// init count
+let counter = 0;
+
+// init width
+const size = sliderImage[0].clientWidth;
+
+
+imageSlider.style.transform = 'translateX(' + (-size * counter) + 'px)'
+
+nextBtn.addEventListener('click', () => {
+    counter++;
+    console.log(counter)
+});
+
+prevBtn.addEventListener('click', () => {
+    counter--;
+    console.log(counter)
+})
