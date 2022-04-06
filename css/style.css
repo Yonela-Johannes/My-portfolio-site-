@@ -524,7 +524,7 @@ section {
 .image-slider-container {
     max-width: 80%;
     margin: auto;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .image-slider {
     display: flex;
